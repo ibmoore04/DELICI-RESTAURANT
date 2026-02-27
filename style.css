@@ -1,0 +1,669 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black !important;
+  color: white !important;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.cube {
+  transform: rotate(45deg);
+  color: #e3be7f;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.navbar {
+  z-index: 10;
+}
+
+.hero-first {
+  border-bottom: 1px solid #858687;
+}
+
+.hero-content h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  line-height: 29.6px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 10px;
+}
+
+.hero-content h1 {
+  font-family: "Forum", serif;
+  font-size: 80px;
+  line-height: 80px;
+  font-weight: normal;
+}
+
+.scroll-top {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  width: 55px;
+  height: 55px;
+  background: #caa169;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 3;
+  color: #000;
+  font-size: 20px;
+}
+
+.scroll-top a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item a:hover {
+  color: #e3be7f !important;
+  text-decoration: double underline;
+  font-size: 18px;
+}
+
+.royalty h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+.royalty h3 {
+  font-family: "Forum", serif;
+  line-height: 50px;
+  font-weight: normal;
+}
+
+.royalty a {
+  text-decoration: none;
+  color: #e3be7f;
+  font-size: 12px;
+}
+.royalty a:hover {
+  color: #e3be7f !important;
+  text-decoration: double underline;
+  font-size: 15px;
+}
+.story {
+  background: #171819;
+}
+.story h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+
+.story p {
+  line-height: 35px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+.story h3 {
+  font-family: "Forum", serif;
+  line-height: 70px;
+  font-weight: normal;
+  font-size: 60px;
+}
+
+.story h5 {
+  color: #e3be7f;
+  font-size: 24px;
+}
+
+.cta {
+  padding: 10px 35px;
+  border: 2px solid #e3be7f;
+  background-color: black;
+  color: #e3be7f;
+  text-decoration: none;
+}
+
+.cta1 {
+  padding: 10px 35px;
+  background-color: #e3be7f;
+  border: 2px solid #e3be7f;
+  color: black;
+  text-decoration: none;
+}
+
+.cta1:hover {
+  border: 2px solid #e3be7f;
+  background-color: black;
+  color: #e3be7f;
+  transition: all 0.5s ease-in;
+}
+
+.cta:hover {
+  background-color: #e3be7f;
+  color: black;
+  transition: all 0.5s ease-in;
+}
+
+.dishes {
+  place-content: center;
+}
+
+.dishes h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+
+.dishess {
+  place-self: center;
+}
+.dollar1 {
+  color: #575451;
+}
+
+.dollar2 {
+  color: #e3be7f;
+  font-size: 20px;
+}
+
+.delicious {
+  background: #171819;
+}
+
+.delicious h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+
+.delicious h3 {
+  font-family: "Forum", serif;
+  line-height: 70px;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.delicious h4 {
+  font-family: "Forum", serif;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.delicious h4:hover {
+  text-decoration: double underline;
+  color: #e3be7f;
+}
+.deli-links {
+  place-content: center;
+  border-top: 1px solid #454647;
+  border-bottom: 1px solid #454647;
+}
+
+.but {
+  background: #e3be7f;
+  border: none;
+  height: 20px;
+}
+
+.delicious p {
+  font-size: 15px;
+  line-height: 20px;
+  color: #9b9b9b;
+}
+
+.delicious h5 {
+  font-family: "Forum", serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.para-delicious {
+  color: white;
+  font-size: 17px !important;
+}
+
+.para-delicious span {
+  color: #e3be7f;
+  font-size: 18px;
+}
+
+.spe-head h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+
+.spe-head h3 {
+  font-family: "Forum", serif;
+  line-height: 70px;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.specialities p {
+  font-size: 15px;
+  color: #9b9b9b;
+  line-height: 20px;
+}
+
+.specialities h5 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+}
+
+.specialities img:hover {
+  opacity: 0.8;
+  transform: rotate(2deg);
+}
+
+.comment {
+  background: #171819;
+}
+
+.comment h1 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+  font-size: 40px;
+}
+
+.comment .cubic {
+  transform: rotate(45deg);
+  color: #e3be7f;
+  place-self: center;
+}
+
+/* Section background (dark) */
+.reservation-section {
+  background: #0a0a0a;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+.reservation-section h2 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.reservation-section p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+/* Reservation Form Box */
+.reservation-box {
+  background: #1b1b1b;
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.form-control {
+  background: #1a1b1c !important;
+  color: white !important;
+  font-family: "DM Sans", sans-serif !important;
+  border: 1px solid #313233 !important;
+}
+
+.form-control::placeholder {
+  color: white;
+}
+
+.contact-box {
+  background-image: url(https://kalanidhithemes.com/live-preview/landing-page/delici/all-demo/Delici-Video-Hero-Center-Header/images/background/pattern-7.png);
+  border-left: 3px solid #e5c387;
+  border-radius: 5px;
+  font-family: "DM Sans", sans-serif !important;
+  padding: 30px;
+}
+
+.contact-box h2,
+p {
+  line-height: 40px;
+}
+
+.tt {
+  color: #e5c387;
+}
+
+.contact-box .tt {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.contact-box .tt:hover {
+  text-decoration: double underline;
+  font-size: 25px;
+}
+
+::placeholder {
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+
+.form-control:focus {
+  border: 1px solid #caa169 !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.con {
+  color: #636562;
+  line-height: 25px;
+}
+
+.reservation-box button {
+  background-color: #e3be7f;
+  border: 2px solid #e3be7f !important;
+  color: #0a0a0a;
+  font-family: "DM Sans", sans-serif !important;
+}
+
+.reservation-box button:hover {
+  background-color: black;
+  color: #e3be7f;
+  transition: all 0.5s ease-in;
+}
+
+.strength {
+  background: #1f2020;
+}
+
+.strength h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+
+.strength h3 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.strength-cards .car1 {
+  background: #171717;
+  color: white;
+}
+
+.strength-cards .car2 {
+  background: #0b0b0b;
+  color: white;
+}
+
+.strength-cards .image:hover {
+  transform: scale(1.05, 1.05) rotate(360deg);
+  transition: all 0.5s ease-in;
+}
+
+.strength p {
+  line-height: 30px;
+  font-size: 14px;
+  color: #949e9e;
+}
+
+.strength2 img {
+  display: block; /* removes small bottom gap */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.strength2 {
+  background: #0e0d0c;
+}
+
+.strength2 h3 {
+  font-size: 30px;
+}
+
+.strength a {
+  text-decoration: none;
+  color: #e3be7f;
+  font-size: 12px;
+  font-family: "DM Sans", sans-serif;
+}
+.strength a:hover {
+  color: #e3be7f !important;
+  text-decoration: double underline;
+  font-size: 15px;
+}
+
+.team h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+
+.team h3 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.team .row h3 {
+  font-size: 30px;
+}
+
+.team p {
+  line-height: 20px;
+  color: #636562;
+  font-size: 15px;
+}
+
+.chef-card {
+  position: relative;
+}
+
+.chef-card img {
+  display: block;
+  transition: 0.5s ease;
+}
+
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.social-icons a {
+  width: 45px;
+  height: 45px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background: #caa169;
+  color: #000;
+}
+
+.chef-card:hover img {
+  transform: scale(1.1);
+}
+
+.chef-card:hover::after {
+  opacity: 1;
+}
+
+.chef-card:hover .social-icons {
+  opacity: 1;
+}
+
+.video {
+  background-image: url(./image/steak.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.video h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+
+.video h3 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.play {
+  border: 4px solid white;
+  font-size: 40px;
+}
+
+.play:hover {
+  background-color: #e3be7f;
+  transition: all 0.5s ease-in;
+}
+
+.event h6 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgb(228, 197, 144);
+  letter-spacing: 5px;
+}
+
+.event h3 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.event h4 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+  font-size: 25px;
+}
+
+footer {
+  background-image: url(./image/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+footer a {
+  text-decoration: none;
+  color: #a7a7a7;
+  font-family: "DM Sans", sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+footer a:hover {
+  color: #e5c387;
+  text-decoration: double underline;
+  font-size: 15px;
+}
+
+.footer-box {
+  background-image: url(https://kalanidhithemes.com/live-preview/landing-page/delici/all-demo/Delici-Video-Hero-Center-Header/images/background/pattern-7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-left: 5px solid #e5c387;
+  border-right: 5px solid #e5c387;
+  border-radius: 5px;
+  font-family: "DM Sans", sans-serif !important;
+  padding: 30px;
+  width: 100%;
+}
+
+.footer-box h2,
+p {
+  line-height: 40px;
+}
+
+.tt {
+  color: #e5c387;
+}
+
+.footer-box .tt {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.footer-box .tt:hover {
+  text-decoration: double underline;
+  font-size: 25px;
+}
+
+.footer-box h3 {
+  font-family: "Forum", serif;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.input-group button {
+  background-color: #e5c387;
+  color: black;
+  letter-spacing: 2px;
+}
+
+.input-group button:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+
+.last {
+  color: #a7a7a7;
+}
