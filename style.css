@@ -547,7 +547,7 @@ p {
 }
 
 .video {
-  background-image: url(./image/steak.jpg);
+  background-image: url(./IMAGE/steak.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -596,7 +596,7 @@ p {
 }
 
 footer {
-  background-image: url(./image/footer.jpg);
+  background-image: url(./IMAGE/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
