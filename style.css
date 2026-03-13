@@ -162,7 +162,7 @@ html {
 
 .cta1:hover {
   border: 2px solid #e3be7f;
-  background-color: black;
+  background-color: transparent !important;
   color: #e3be7f;
   transition: all 0.5s ease-in;
 }
